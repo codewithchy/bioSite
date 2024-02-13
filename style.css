@@ -1,0 +1,37 @@
+
+
+body {
+    background-color: #E6E6FA; 
+    color: #000000; 
+}
+
+header {
+    background-color: #ADD8E6;
+    color: #FFFFFF; 
+}
+
+nav {
+    background-color: #98FB98;
+}
+
+footer {
+    background-color: #FFD1DC; 
+    color: #000000; 
+}
+
+a {
+    color: #000000; 
+}
+
+a:hover {
+    color: #ADD8E6; 
+}
+
+button {
+    background-color: #ADD8E6; 
+    color: #FFFFFF; 
+}
+
+button:hover {
+    background-color: #98FB98; 
+}
