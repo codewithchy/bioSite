@@ -1,25 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebony's Hobbies</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>University Website Design</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Hobbies</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Ebony's Interests</h2>
-        <p>Here, you'll discover all about my bestfriend's hobbies and interests.</p>
-    </main>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+<!----------- Course ------->
+
+<section class="course">
+    <h1>Take a course</h1>
+    <p>Online and on-campus courses that fit your lifestyle.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Undergraduate</h3>
+            <p>Whether you want to earn a Bachelor of Liberal Arts degree, explore a topic for enrichment, or achieve a professional goal, our undergraduate programs can help you gain an introductory foundation while earning a Disciple degree or credential.</p></p>
+        </div>
+        <div class="course-col">
+            <h3>Graduate</h3>
+            <p>Earn a Master of Liberal Arts in Extension Studies degree in one of over 20 fields to gain critical insights and practical skills for success in your career or scholarly pursuits.</p></p>
+        </div>
+        <div class="course-col">
+            <h3>Virtual Learning</h3>
+            <p>Our online courses are grounded in a live experience. You will engage with your instructor, participate in peer discussions, and receive one-on-one support from teaching staff—all from your home or office. </p>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- ------------ facilities ----- -->
+
+<section class="facilities">
+    <h1>Campus Amenities</h1>
+    <p>Our campus offers recreation and athletics, learning and study resources,
+    clubs, housing options, meal plans, and much more!</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Numerous library innovations have been accomplished during Perry’s administration, beginning with the establishment of a Library Systems and Technology office and funded grants. In 2007, the library opened a state of the art Information Technology Center on the second floor. Currently plans are near completion for a total redesign of the first, third and fourth floors.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+            <h3>Largest Courtyard</h3>
+            <p>To best prepare each student-athlete for the demands of their sport, being a collegiate athlete, and
+                developing into a successful young adult. By using principle means of Strength & Conditioning we will mold
+                student-athletes physically and mentally to maximize their potential.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty & Healthy Food</h3>
+            <p>Each campus has a nutritionist on staff who can help you if you are feeling frustrated by your food options at the cafeteria. This person may have a little pull beyond the norm to help you get your needs met, particularly if you have dietary requirements that are not being met by the traditional meal plan.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ---- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>When you come here, you'll develop lasting bonds and lifelong friendships; and with more than 25 organizations <br>and clubs, you'll have every opportunity to
+    get involved and staying involved for the Bulldog experience.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-reddit"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> CHYNNA LEE</p>
+</section>
+
+
+<!--------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
 </body>
 </html>

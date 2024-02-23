@@ -1,25 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Ebony</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>University Website Design</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>About Ebony</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>The Life That Formed Her</h2>
-        <p>Ebony is the oldest of four siblings yet she's still everyone's baby! Now when I say baby take her as no amateur; Ebony's charm and wit exudes an innocence that can make a nun feel like a dirty little sinner. She is almost so surreal you even start to question if she's a real person. I mean no one this perfect can exist right?  </p>
-    </main>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ALL ABOUT EBONY</a></li>
+                    <li><a href="hobbies.html">HER INTERESTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+<!----------- about us content ------->
+
+<section class="about-us">
+
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's most diverse university</h1>
+            <p>We are Disciple University to the world for every type of adult learner. We serve students seeking part-time, online courses and nonresidential programs to advance their career or pursue an academic passion.<br></p>
+            <p>We are a fully accredited Disciple school. Our degrees and certificates are adorned with the Disciple University insignia. They carry the weight of that lineage. Our graduates walk at University commencement and become members of the Disciple Alumni Association.<br></p>
+            <p>As one of 12 degree-granting institutions at Disciple University, we teach to the largest and most eclectic student body. Our students come to us from every time zone, every culture and career background, every age from 18 to 89.<br></p>
+            Our students have one thing in common: the motivation to take the next challenging step in their lives.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+    </div>
+</section>
+
+
+
+<!-- ---- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>When you come here, you'll develop lasting bonds and lifelong friendships; and with more than 25 organizations <br>and clubs, you'll have every opportunity to
+    get involved and staying involved for the Bulldog experience.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-reddit"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart"></i> CHYNNA LEE</p>
+</section>
+
+
+<!--------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
 </body>
 </html>

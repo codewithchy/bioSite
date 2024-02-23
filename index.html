@@ -1,25 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Little Miss Perfect - Home</title>
-    <link rel="stylesheet" href="styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>bioSite</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1> From a Princess to a Queen</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>All About Ebony</h2>
-        <p>Welcome to my bioSite. My project is dedicated to my cousin and best friend, Ebony M. Cooley. Everybody calls her princess but its been my highest honor watching her grow into the young woman she is today. I felt using her for this project would help motivate me to put my best effort into this assignment and also show her some appreciation. She's been working so hard pursuing her goals and I hope this is just a sign for her to keep going.</p>
-    </main>
+    <section class="header">
+        <nav>
+            <a href="index.html"></a>
+            <div class="nav-links" id="navLinks">
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ALL ABOUT EBONY</a></li>
+                    <li><a href="hobbies.html">HER INTERESTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class="text-box">
+    <h1>Ebony Marie Cooley <br> From a Princess to a Queen!</h1>
+    <p>I have had the pleasure of getting to know one and grow with an angel on Earth. This angel is my bestfriend, Ebony. She's always so hard on herself and I wanted to show her how much I think of her and her impact on those around her.
+    Ebony is a living representation of femininity, vulnerability, kindness, and selflessness. She is my inspiration and I can only dream of being as angelic as her!</p>
+    <a href="" class="hero-btn">LOVE HARDER</a>
+</div>
+
+    </section>
+
+<!------- life -------->
+
+<section class="life">
+    <h1>Life Through Her Eyes</h1>
+    <p>The affects each stage of life had on Ebony's development..</p>
+
+    <div class="row">
+        <div class="life-col">
+            <h3>Childhood</h3>
+            <p>First born to two married parents whom had been together since childhood, Ebony was excited at the news of her becoming a big sister. Her parents welcomed a baby boy into the world! This stage of life is where she developed her nurturing, protective, and loving skills. It was also at this stage of life where Ebony experienced tragic loss and grief losing both her maternal and paternal grandmothers and to soon follow her 4 year-old brother Terrance to cancer. </p></p>
+        </div>
+        <div class="life-col">
+            <h3>Teen-hood</h3>
+            <p>Wounded but faithful, Ebony and her parents relocated to Texas from New Orleans where they welcomed another son and daughter into their family. Her mom picked up more shifts while still in school and her dad was consistently on the road driving trucks. This forced Ebony to step up as the mother figure for her siblings and reopened her heart to love. She found resilience and hope in trusting in God. She realized that when she lost her brother all she wanted was more time with him and now with her new siblings that was all she had with them. This is where her positive outlook on life comes from, as from this moment on she was determined to see the good in every situation.</p></p>
+        </div>
+        <div class="life-col">
+            <h3>Adulthood</h3>
+            <p>Ebony was always having to be responsible and a good example for her younger siblings so she never got into the usual trouble most kids do. This is where Ebony starts experimenting with freedom and discovering her self, her interests and dislikes. Watching Ebony bloom into adulthood is no different than watching a romcom and everyone's rooting for the main character to win. She's funny, innocent, unpredictable and completely out of the loop and that is her advantage!  </p>
+        </div>
+    </div>
+
+
+</section>
+
+
+<!-- ------ Favorites -------->
+
+<section class="favorites">
+    <h1>Ebony's Favorites</h1>
+    <p>Our campus offers recreation and athletics, learning and study resources,
+    clubs, housing options, meal plans, and much more!</p>
+
+    <div class="row">
+        <div class="favorites-col">
+            <img src="images/library.png">
+            <h3>World Class Library</h3>
+            <p>Numerous library innovations have been accomplished during Perry’s administration, beginning with the establishment of a Library Systems and Technology office and funded grants. In 2007, the library opened a state of the art Information Technology Center on the second floor. Currently plans are near completion for a total redesign of the first, third and fourth floors.</p>
+        </div>
+        <div class="favorites-col">
+            <img src="images/basketball.png">
+            <h3>Largest Courtyard</h3>
+            <p>To best prepare each student-athlete for the demands of their sport, being a collegiate athlete, and
+                developing into a successful young adult. By using principle means of Strength & Conditioning we will mold
+                student-athletes physically and mentally to maximize their potential.</p>
+        </div>
+        <div class="favorites-col">
+            <img src="images/cafeteria.png">
+            <h3>Tasty & Healthy Food</h3>
+            <p>Each campus has a nutritionist on staff who can help you if you are feeling frustrated by your food options at the cafeteria. This person may have a little pull beyond the norm to help you get your needs met, particularly if you have dietary requirements that are not being met by the traditional meal plan.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ---- Footer ------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>When you come here, you'll develop lasting bonds and lifelong friendships; and with more than 25 organizations <br>and clubs, you'll have every opportunity to
+    get involved and staying involved for the Bulldog experience.</p>
+    
+    <p>Made with <i class="fa fa-heart-o"></i> CHYNNA LEE</p>
+</section>
+
+
+<!--------JavaScript for Toggle Menu------>
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
 </body>
 </html>
