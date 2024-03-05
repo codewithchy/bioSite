@@ -284,3 +284,34 @@ h3{
 .red-btn:hover{
     color: #fff;
 }
+
+css
+Copy code
+.row {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+This will make sure that the row stays within the screen width and wraps its content.
+
+Improve Responsiveness: Use media queries to adjust the layout for different screen sizes. For example, you can modify the styles for .row inside the media query for smaller screens:
+
+css
+Copy code
+@media(max-width: 700px){
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hobbies-col,
+    .favorites-col,
+    .facilities-col {
+        flex-basis: 100%;
+    }
+}
+.hobbies img,
+.facilities img {
+    max-width: 100%;
+    height: auto;
+}
